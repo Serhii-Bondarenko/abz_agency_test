@@ -1,0 +1,40 @@
+.auth__user-photo{
+  position: relative;
+  width: 380px;
+//
+  .auth__upload{
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+  }
+//  custom upload input
+  label{
+
+    .upload__btn{
+      padding: 14px 15px;
+      border: 1px solid rgba(0, 0, 0, 0.87);
+      box-sizing: border-box;
+      border-radius: 4px 0px 0px 4px;
+    }
+    .upload__input{
+      width: 100%;
+      color: #7E7E7E;
+      padding: 14px 0 14px 16px;
+      border: 1px solid #D0CFCF;
+      border-left: none;
+      box-sizing: border-box;
+      border-radius: 0px 0px 4px 4px;
+    }
+//  on wrong input
+    .invalid__upload{
+      border-width: 2px;
+      border-color: #CB3D40;
+    }
+  }
+}
+//  media query
+.auth__user-photo{
+  @media (max-width: 400px) {
+    width: 328px;
+  }
+}

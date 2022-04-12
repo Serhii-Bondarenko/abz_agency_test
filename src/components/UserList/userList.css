@@ -1,0 +1,19 @@
+.user__container {
+  flex-direction: column;
+  align-items: center;
+  row-gap: 50px;
+}
+.user__container .user__list {
+  justify-content: center;
+  gap: 29px;
+}
+.user__container h2 {
+  margin-top: 140px;
+}
+@media (max-width: 768px) {
+  .user__container .user__list {
+    gap: 16px;
+  }
+}
+
+/*# sourceMappingURL=userList.css.map */

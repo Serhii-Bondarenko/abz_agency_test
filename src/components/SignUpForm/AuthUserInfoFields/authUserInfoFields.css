@@ -1,0 +1,19 @@
+.auth__user-info {
+  row-gap: 50px;
+}
+.auth__user-info .auth__input {
+  position: relative;
+}
+.auth__user-info .auth__input label {
+  display: none;
+  position: absolute;
+  font-size: 12px;
+  line-height: 14px;
+  top: -7px;
+  left: 11px;
+  padding: 0 5px;
+  background-color: #F8F8F8;
+  color: #7E7E7E;
+}
+
+/*# sourceMappingURL=authUserInfoFields.css.map */

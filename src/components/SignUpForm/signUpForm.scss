@@ -1,0 +1,61 @@
+// common styles
+.auth__user-position, .auth__user-photo{
+  margin-bottom: 50px;
+}
+
+.auth__container, .auth__form, .auth__user-info{
+  flex-direction: column;
+  align-items: center;
+}
+
+.prompt__txt, .error__txt{
+  padding: 4px 0 0 16px;
+  font-size: 12px;
+  line-height: 14px;
+}
+//  main wrap-block
+.auth__container{
+  margin-top: 140px;
+
+  .prompt__txt{
+    color: #7E7E7E;
+  }
+  .error__txt{
+    color: #CB3D40;
+  }
+  .error__border{
+    border: 2px solid #CB3D40;
+    box-sizing: border-box;
+    border-radius: 4px;
+  }
+  h2{
+    margin-bottom: 50px;
+  }
+// form
+  .auth__form{
+    width: fit-content;
+
+    .server__error{
+      padding-bottom: 20px;
+      p{
+        font-weight: bold;
+      }
+    }
+  }
+// input styles
+  input{
+    width: 380px;
+    padding: 14px 0 14px 16px;
+    color: #7E7E7E;
+    background-color: transparent;
+    border: 1px solid #D0CFCF;
+    box-sizing: border-box;
+    border-radius: 4px;
+  }
+// media query
+  input{
+    @media (max-width: 400px) {
+      width: 328px;
+    }
+  }
+}

@@ -1,0 +1,57 @@
+.auth__user-position, .auth__user-photo {
+  margin-bottom: 50px;
+}
+
+.auth__container, .auth__form, .auth__user-info {
+  flex-direction: column;
+  align-items: center;
+}
+
+.prompt__txt, .error__txt {
+  padding: 4px 0 0 16px;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.auth__container {
+  margin-top: 140px;
+}
+.auth__container .prompt__txt {
+  color: #7E7E7E;
+}
+.auth__container .error__txt {
+  color: #CB3D40;
+}
+.auth__container .error__border {
+  border: 2px solid #CB3D40;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.auth__container h2 {
+  margin-bottom: 50px;
+}
+.auth__container .auth__form {
+  width: fit-content;
+}
+.auth__container .auth__form .server__error {
+  padding-bottom: 20px;
+}
+.auth__container .auth__form .server__error p {
+  font-weight: bold;
+}
+.auth__container input {
+  width: 380px;
+  padding: 14px 0 14px 16px;
+  color: #7E7E7E;
+  background-color: transparent;
+  border: 1px solid #D0CFCF;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+@media (max-width: 400px) {
+  .auth__container input {
+    width: 328px;
+  }
+}
+
+/*# sourceMappingURL=signUpForm.css.map */

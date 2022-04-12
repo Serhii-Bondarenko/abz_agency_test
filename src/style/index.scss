@@ -1,0 +1,73 @@
+@import "normalize";
+
+$headingSize: 40px;
+$headingLineHeight: 40px;
+$txtSize: 16px;
+$txtLineHeight: 26px;
+
+$primary: #F4E041;
+$secondary: #00BDD3;
+$bg: #F8F8F8;
+
+$btnPrimary: #F4E041;
+$btnHover: #FFE302;
+$btnDisabled: #B4B4B4;
+
+body {
+  font-family: 'Nunito', sans-serif;
+  font-size: $txtSize;
+  line-height: $txtLineHeight;
+  background-color: $bg;
+}
+
+.flex{
+  display: flex;
+}
+
+.wrap{
+  flex-wrap: wrap;
+}
+// container-fluid
+.container{
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+h1, h2{
+  font-size: $headingSize;
+  line-height: $headingLineHeight;
+  text-align: center;
+}
+
+// Buttons
+.btn{
+  width: 100px;
+  height: 34px;
+  padding: 4px 0;
+  background-color: $btnPrimary;
+  color: black;
+  border-radius: 80px;
+  &:hover{
+    background-color: $btnHover;
+  }
+  &:disabled{
+    background-color: $btnDisabled;
+    color: white;
+  }
+}
+
+//    MEDIA QUERY
+
+.container{
+  @media (max-width: 1260px) {
+    padding: 0 60px;
+  }
+
+  @media (max-width: 768px) {
+    padding: 0 32px;
+  }
+
+  @media (max-width: 500px) {
+    padding: 0 16px;
+  }
+}

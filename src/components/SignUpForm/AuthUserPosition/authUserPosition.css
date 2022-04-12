@@ -1,0 +1,17 @@
+.auth__user-position {
+  margin-top: 25px;
+  flex-direction: column;
+  align-self: start;
+}
+.auth__user-position p {
+  margin-bottom: 14px;
+}
+.auth__user-position input {
+  width: auto;
+}
+.auth__user-position label {
+  align-items: center;
+  column-gap: 12px;
+}
+
+/*# sourceMappingURL=authUserPosition.css.map */

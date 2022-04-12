@@ -1,0 +1,35 @@
+.user__card {
+  text-align: center;
+  flex-direction: column;
+  row-gap: 20px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  max-width: 370px;
+  flex: 1 1 30%;
+  align-items: center;
+}
+.user__card img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+.user__card .user__info p {
+  word-break: break-all;
+}
+.user__card .user__info .user__email {
+  cursor: pointer;
+}
+
+@media (max-width: 900px) {
+  .user__card {
+    flex: 1 1 40%;
+  }
+}
+@media (max-width: 500px) {
+  .user__card {
+    flex: 1 1 100%;
+  }
+}
+
+/*# sourceMappingURL=userCard.css.map */

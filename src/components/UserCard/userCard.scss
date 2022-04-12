@@ -1,0 +1,36 @@
+.user__card{
+  text-align: center;
+  flex-direction: column;
+  row-gap: 20px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  max-width: 370px;
+  flex: 1 1 30%;
+  align-items: center;
+// avatar
+  img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+  }
+// card content
+  .user__info{
+    p{
+      word-break: break-all;
+    }
+    .user__email{
+      cursor: pointer;
+    }
+  }
+}
+// media query
+.user__card{
+  @media (max-width: 900px) {
+    flex: 1 1 40%;
+  }
+
+  @media (max-width: 500px) {
+    flex: 1 1 100%;
+  }
+}

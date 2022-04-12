@@ -1,0 +1,30 @@
+.header__nav {
+  padding: 13px 0;
+  background-color: white;
+}
+.header__nav .container {
+  justify-content: space-between;
+}
+.header__nav .header__btn {
+  column-gap: 10px;
+}
+
+.header__caption {
+  width: 100%;
+  height: 650px;
+  align-items: center;
+  justify-content: center;
+}
+.header__caption .header__caption-inner {
+  color: white;
+  max-width: 380px;
+  text-align: center;
+}
+.header__caption .header__caption-inner h1 {
+  margin-bottom: 21px;
+}
+.header__caption .header__caption-inner p {
+  margin-bottom: 32px;
+}
+
+/*# sourceMappingURL=header.css.map */

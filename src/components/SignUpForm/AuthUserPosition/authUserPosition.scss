@@ -1,0 +1,16 @@
+.auth__user-position{
+  margin-top: 25px;
+  flex-direction: column;
+  align-self: start;
+
+  p{
+    margin-bottom: 14px;
+  }
+  input{
+    width: auto;
+  }
+  label{
+    align-items: center;
+    column-gap: 12px;
+  }
+}
