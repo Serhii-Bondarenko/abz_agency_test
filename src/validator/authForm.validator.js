@@ -22,14 +22,9 @@ const authFormSchema = Joi.object({
             'string.pattern.base': 'Number should start with code of Ukraine +380',
         }),
 
-    position_id: Joi.number().required().messages({
-        'number.base': 'You have to choose a profession'
-    }),
+    position_id: Joi.number().required(),
 
-    photo: Joi.object().required().messages({
-        'object.base': 'Minimum size of photo 70x70px. The photo size must not be greater than 5 Mb.' +
-            'The photo format must be jpeg/jpg type.'
-    })
+    photo: Joi.object().required()
 })
 
 export { authFormSchema }
