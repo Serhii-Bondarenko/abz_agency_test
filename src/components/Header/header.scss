@@ -3,6 +3,10 @@
     padding: 13px 0;
     background-color: white;
 
+    img{
+        width: 104px;
+        height: 26px;
+    }
     .container{
         justify-content: space-between;
     }
@@ -28,6 +32,13 @@
         p{
             margin-bottom: 32px;
         }
+    }
+}
+
+// media query
+.header__caption{
+    @media (max-width: 800px) {
+        height: 500px;
     }
 }
 
