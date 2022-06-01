@@ -89,13 +89,11 @@ const SignUpForm = () => {
 
     const inputStyling = (e) => {
         errorDecoration(e);
-
         if (e.target.value) {
             e.target.previousElementSibling.style.display = 'block';
 
             return;
         }
-
         e.target.previousElementSibling.style.display = 'none';
     }
 

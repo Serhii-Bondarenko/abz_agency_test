@@ -77,7 +77,7 @@ const appSlice = createSlice({
 
             state.totalPages = total_pages;
             state.users = usersList
-                .sort((a, b) => b.registration_timestamp > a.registration_timestamp ? 1 : -1);
+                .sort((a, b) => b.registration_timestamp - a.registration_timestamp);
         },
 
         setNextPage: (state, action) => {

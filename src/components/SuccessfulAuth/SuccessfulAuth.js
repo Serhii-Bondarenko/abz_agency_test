@@ -1,7 +1,7 @@
 import React from 'react';
 
 import './successfulAuth.css';
-import img from '../../img/success-image.svg';
+import img from '../../assets/img/success-image.svg';
 
 const SuccessfulAuth = () => {
     return (

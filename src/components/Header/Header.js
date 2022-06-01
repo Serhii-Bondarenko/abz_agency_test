@@ -2,8 +2,7 @@ import React from 'react';
 import { Link } from 'react-scroll';
 
 import './header.css';
-import Logo from '../../img/Logo.svg';
-import Caption from '../../img/pexels.jpeg';
+import Logo from '../../assets/img/Logo.svg';
 
 const Header = () => {
     return (
@@ -16,18 +15,12 @@ const Header = () => {
                             <button className='btn'>Users</button>
                         </Link>
                         <Link smooth={ true } duration={ 1000 } to='auth'>
-                            <button className='btn'>Sign Up</button>
+                            <button className='btn'>Sign up</button>
                         </Link>
                     </div>
                 </div>
             </div>
-            <div className='header__caption flex container' style={
-                {
-                    backgroundImage: `linear-gradient(0deg, rgb(0, 0, 0, 0.5), rgb(0, 0, 0, 0.5)), url(${Caption})`,
-                    backgroundSize: 'cover',
-                    backgroundRepeat: 'no-repeat'
-                }
-            }>
+            <div className='header__caption flex container'>
                 <div className='header__caption-inner'>
                     <h1>Test assignment for front-end developer</h1>
                     <p>

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
 import './userList.css';
@@ -10,7 +10,6 @@ import { constants } from '../../configs';
 
 const UserList = () => {
     const dispatch = useDispatch();
-    const [flag, setFlag] = useState(false);
 
     const {
         users,
@@ -22,16 +21,9 @@ const UserList = () => {
 
     useEffect(() => {
         dispatch(getAllUsers({page: currentPage}));
-        currentPage === 1 && setFlag(false);
     }, [currentPage, responseStatus])
 
     const toNextPage = () => {
-        if (currentPage === totalPages) {
-            setFlag(!flag);
-
-            return;
-        }
-
         dispatch(setNextPage());
     }
 
@@ -46,7 +38,7 @@ const UserList = () => {
             {
                 status === constants.PENDING && <Loader/>
             }
-            <button disabled={ flag } className='btn' onClick={ toNextPage }>
+            <button disabled={ currentPage === totalPages } className='btn' onClick={ toNextPage }>
                 Show more
             </button>
         </div>

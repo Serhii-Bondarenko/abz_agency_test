@@ -1,6 +1,7 @@
 .auth__user-photo {
   position: relative;
   width: 380px;
+  margin-bottom: 45px;
 }
 .auth__user-photo .auth__upload {
   opacity: 0;
@@ -8,10 +9,10 @@
   position: absolute;
 }
 .auth__user-photo label .upload__btn {
-  padding: 14px 15px;
+  padding: 14px;
   border: 1px solid rgba(0, 0, 0, 0.87);
   box-sizing: border-box;
-  border-radius: 4px 0px 0px 4px;
+  border-radius: 4px 0 0 4px;
 }
 .auth__user-photo label .upload__input {
   width: 100%;
@@ -20,7 +21,7 @@
   border: 1px solid #D0CFCF;
   border-left: none;
   box-sizing: border-box;
-  border-radius: 0px 0px 4px 4px;
+  border-radius: 0 0 4px 4px;
 }
 .auth__user-photo label .invalid__upload {
   border-width: 2px;

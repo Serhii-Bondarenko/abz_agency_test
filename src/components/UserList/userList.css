@@ -7,6 +7,9 @@
   justify-content: center;
   gap: 29px;
 }
+.user__container .btn {
+  width: 120px;
+}
 .user__container h2 {
   margin-top: 140px;
 }
